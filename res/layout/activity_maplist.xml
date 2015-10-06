@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/map_mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingBottom="14dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="14dip" >
+
+                <TextView
+                    android:id="@+id/mapTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:text="附近"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#ffffffff" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="12" >
+
+                <ImageButton
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/btn_map_back_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/btn_weight"
+                    android:paddingBottom="12dip"
+                    android:paddingTop="12dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_list" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+     <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_below="@id/map_mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    
+</RelativeLayout>

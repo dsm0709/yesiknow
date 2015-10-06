@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:background="#000000"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title"
+            android:gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/test_back"
+                android:layout_width="50dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/btn_weight"
+                android:paddingLeft="8dip"
+                android:paddingRight="20dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/detailname"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="13dip"
+                android:layout_marginLeft="5dip"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="测试页"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_detail_map"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="45dip"
+                android:layout_height="52dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/btn_weight"
+                android:paddingBottom="13dip"
+                android:paddingTop="13dip"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape"
+        android:text="时间设定" />
+
+    <Button
+        android:id="@+id/test_morning"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="早晨7点" />
+
+    <Button
+        android:id="@+id/test_noon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="中午12点" />
+
+    <Button
+        android:id="@+id/test_night"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="晚上22点" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/shape"
+        android:text="地点设定" />
+
+    <Button
+        android:id="@+id/test_loc1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="钟楼" />
+
+    <Button
+        android:id="@+id/test_loc2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="小寨" />
+
+    <Button
+        android:id="@+id/test_loc3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="西电老校区" />
+
+</LinearLayout>
